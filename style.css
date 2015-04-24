@@ -12,23 +12,31 @@
  *  Text Domain:  twenty-fifteen-child
  */
 
-/* creates the coloured panel that the sidebar appears in front of */
-body:before {
-  left: auto;
-  right: 0;
-}
+/* sidebar rules relevant only in wide screen layout */
+@media screen and (min-width: 59.6875em) {
+  /* creates the coloured panel that the sidebar appears in front of */
+  body:before {
+    left: auto;
+    right: 0;
+  }
 
-/* contains the sidebar content */
-.sidebar {
-  float: right;
-  right: 0; /* needed for when position: fixed is applied */
-  margin-left: -100%;
-  margin-right: auto;
-}
+  /* contains the sidebar content */
+  .sidebar {
+    float: right;
+    right: 0; /* needed for when position: fixed is applied */
+    margin-left: -100%;
+    margin-right: auto;
+  }
 
-/* contains the main site content */
-.site-content {
-  float: right;
-  margin-left: auto;
-  margin-right: 29.4118%;
+  /* contains the main site content */
+  .site-content {
+    float: right;
+    margin-left: auto;
+    margin-right: 29.4118%;
+  }
+
+  /* the "powered by Wordpress" footer */
+  .site-footer {
+    margin: 0 0 0 6.1%;
+  }
 }
