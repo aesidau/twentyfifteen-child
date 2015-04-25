@@ -38,5 +38,6 @@
   /* the "powered by Wordpress" footer */
   .site-footer {
     margin: 0 0 0 6.1%;
+    display: none;
   }
 }
