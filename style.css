@@ -12,8 +12,15 @@
  *  Text Domain:  twenty-fifteen-child
  */
 
+/* rules to make the image widget smaller when in the dropdown menu: */
+.widget_sp_image {
+  max-width: 40%;
+}
+
 /* sidebar rules relevant only in wide screen layout */
 @media screen and (min-width: 59.6875em) {
+  /* rules to put the sidebar on the right: */
+
   /* creates the coloured panel that the sidebar appears in front of */
   body:before {
     left: auto;
@@ -39,5 +46,11 @@
   .site-footer {
     margin: 0 0 0 6.1%;
     display: none;
+  }
+
+  /* rules to make the image widget smaller when in the dropdown menu: */
+  /* make it normal sized when in the sidebar */
+  .widget_sp_image {
+    max-width: 100%;
   }
 }
